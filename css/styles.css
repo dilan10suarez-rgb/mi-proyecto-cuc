@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f7f8;
+    background-color: #333f43;
     color: #333;
 }
 
@@ -14,7 +14,7 @@ body {
 /* ENCABEZADO */
 
 header {
-    background-color: #a6192e;
+    background-color: #055e8a;
     color: white;
     text-align: center;
     padding: 30px;

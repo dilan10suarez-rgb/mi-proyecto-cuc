@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buzón CUC Escucha</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
             <form>
 
                 <div class="grupo">
-                    <label for="nombre">Nombre completo</label>
+                    <label for="nombre">Nombre y Apelllido</label>
                     <input
                         type="text"
                         id="nombre"
@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="grupo">
-                    <label for="correo">Correo institucional</label>
+                    <label for="correo">Email institucional</label>
                     <input
                         type="email"
                         id="correo"
@@ -55,8 +55,28 @@
                         placeholder="Ej. Ingeniería de Sistemas">
                 </div>
 
+                 <div class="grupo">
+                    <label for="Semestre">Semestre</label>
+                    <input
+                        type="text"
+                        id="Semestre"
+                        name="Semestre"
+                        placeholder="Ej. 5to Semestre">
+                </div>
+
                 <div class="grupo">
-                    <label for="categoria">Categoría de la sugerencia</label>
+                    <label for="categoria">Jornada o Modalidad</label>
+
+                    <select id="categoria" name="categoria" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="diurna">Diurna</option>
+                        <option value="nocturna">Nocturna</option>
+                        <option value="virtual">Clases virtuales</option>
+                    </select>
+                </div>
+
+                <div class="grupo">
+                    <label for="categoria">Tipo de sugerencia</label>
 
                     <select id="categoria" name="categoria" required>
                         <option value="">Seleccione una opción</option>
@@ -64,7 +84,8 @@
                         <option value="servicios">Servicios</option>
                         <option value="clases">Clases</option>
                         <option value="inclusion">Inclusión</option>
-                        <option value="espacios">Espacios</option>
+                        <option value="espacios">Espacios de recreación</option>
+                        <option value="espacios">Espacios de estudio</option>
                         <option value="procesos">Procesos académicos</option>
                     </select>
                 </div>
