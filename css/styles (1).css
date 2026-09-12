@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f8;
+    color: #333;
+}
+
+
+/* ENCABEZADO */
+
+header {
+    background-color: #a6192e;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+
+/* CONTENIDO PRINCIPAL */
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+
+/* TARJETA DEL FORMULARIO */
+
+.contenedor {
+    background-color: white;
+    width: 100%;
+    max-width: 650px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #a6192e;
+}
+
+.subtitulo {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* CAMPOS DEL FORMULARIO */
+
+.grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+label {
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #a6192e;
+}
+
+
+/* CASILLA DE ENVÍO ANÓNIMO */
+
+.grupo-checkbox {
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.checkbox-label input {
+    width: auto;
+    padding: 0;
+}
+
+
+/* BOTÓN */
+
+button {
+    width: 100%;
+    padding: 13px;
+    background-color: #a6192e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7e1322;
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+
+/* DISEÑO PARA CELULARES */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px;
+    }
+
+    .contenedor {
+        padding: 20px;
+    }
+
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buzón CUC Escucha</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Buzón CUC Escucha</h1>
+        <p>Tu voz mejora la experiencia en la Universidad de la Costa</p>
+    </header>
+
+    <main>
+
+        <section class="contenedor">
+
+            <h2>Cuéntanos tu idea o sugerencia</h2>
+            <p class="subtitulo">
+                Comparte propuestas relacionadas con bienestar, servicios, clases, inclusión,
+                espacios o procesos académicos. Tu opinión nos ayuda a mejorar.
+            </p>
+
+            <form>
+
+                <div class="grupo">
+                    <label for="nombre">Nombre completo</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ej. Laura Gómez">
+                </div>
+
+                <div class="grupo">
+                    <label for="correo">Correo institucional</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="nombre@cuc.edu.co">
+                </div>
+
+                <div class="grupo">
+                    <label for="programa">Programa académico</label>
+                    <input
+                        type="text"
+                        id="programa"
+                        name="programa"
+                        placeholder="Ej. Ingeniería de Sistemas">
+                </div>
+
+                <div class="grupo">
+                    <label for="categoria">Categoría de la sugerencia</label>
+
+                    <select id="categoria" name="categoria" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="bienestar">Bienestar</option>
+                        <option value="servicios">Servicios</option>
+                        <option value="clases">Clases</option>
+                        <option value="inclusion">Inclusión</option>
+                        <option value="espacios">Espacios</option>
+                        <option value="procesos">Procesos académicos</option>
+                    </select>
+                </div>
+
+                <div class="grupo">
+                    <label for="sugerencia">Tu sugerencia</label>
+
+                    <textarea
+                        id="sugerencia"
+                        name="sugerencia"
+                        rows="5"
+                        placeholder="Describe con detalle tu idea o sugerencia..."
+                        required>
+                    </textarea>
+                </div>
+
+                <div class="grupo grupo-checkbox">
+                    <label class="checkbox-label">
+                        <input
+                            type="checkbox"
+                            id="anonimo"
+                            name="anonimo">
+                        Enviar de forma anónima
+                    </label>
+                </div>
+
+                <button type="submit">Enviar sugerencia</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Facultad de Ingeniería &middot; Universidad de la Costa &middot; Buzón CUC Escucha</p>
+    </footer>
+
+</body>
+
+</html>
